@@ -1,0 +1,29 @@
+# Simple Calculator with basic arithmetic operations
+
+def add(x, y):
+    return x + y  # Addition of the two numbers
+
+def sub(x, y):
+    return x - y  # Subtraction of the two numbers
+
+def multi(x, y):
+    return x * y  # Multiplication of the two numbers
+
+def division(x, y):
+    return x / y  # Division of the two numbers
+
+x = int(input("Enter the first number: "))
+y = int(input("Enter the second number: "))
+operator = input("Enter the operation you want to perform (+, -, *, /): ")
+
+if operator == "+":
+    print(add(x, y))
+elif operator == "-":
+    print(sub(x, y))
+elif operator == "*":
+    print(multi(x, y))
+elif operator == "/":
+    print(division(x, y))
+else:
+    print("Invalid input")
+
